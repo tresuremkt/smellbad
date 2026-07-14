@@ -268,8 +268,10 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 .hero-media { width: 100%; }
 
-.hero-placeholder {
-  aspect-ratio: 6 / 5;
+.hero-photo {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
 }
 
@@ -393,9 +395,11 @@ ul { list-style: none; margin: 0; padding: 0; }
 /* ---------------- 三大方案 ---------------- */
 .solutions {
   padding: 88px 0;
-  background:
-    radial-gradient(900px 400px at 110% 0%, rgba(30, 127, 147, 0.35), transparent 60%),
-    linear-gradient(160deg, var(--color-teal-900) 0%, #14454f 100%);
+  background-image:
+    linear-gradient(rgba(13, 38, 45, 0.82), rgba(13, 38, 45, 0.82)),
+    url("https://tresure-clinic.com/wp-content/uploads/2026/07/musty-smell-scaled.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .solutions-head {
@@ -518,7 +522,20 @@ ul { list-style: none; margin: 0; padding: 0; }
 .treatment { padding: 88px 0; }
 
 .treatment.lssa { background: var(--color-white); }
-.treatment.miradry { background: var(--color-ice); }
+
+.treatment.miradry {
+  background-image:
+    linear-gradient(rgba(13, 38, 45, 0.82), rgba(13, 38, 45, 0.82)),
+    url("https://tresure-clinic.com/wp-content/uploads/2026/07/miraDry_use.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.treatment.miradry .section-title { color: var(--color-white); }
+.treatment.miradry .section-desc { color: rgba(255, 255, 255, 0.82); }
+.treatment.miradry .treatment-label { color: var(--color-gold-300); }
+.treatment.miradry .stat-note { color: rgba(255, 255, 255, 0.7); }
+
 .treatment.botox { background: var(--color-white); }
 
 .treatment-grid {
