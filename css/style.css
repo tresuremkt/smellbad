@@ -165,9 +165,6 @@ ul { list-style: none; margin: 0; padding: 0; }
   align-items: center;
 }
 
-@media (min-width: 960px) {
-  .hero-inner { grid-template-columns: 1.05fr 0.95fr; gap: 56px; }
-}
 
 .eyebrow {
   display: inline-flex;
@@ -266,14 +263,6 @@ ul { list-style: none; margin: 0; padding: 0; }
   color: var(--color-text-soft);
 }
 
-.hero-media { width: 100%; }
-
-.hero-photo {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-soft);
-}
 
 /* ---------------- 狐臭原因 ---------------- */
 .cause {
@@ -536,7 +525,17 @@ ul { list-style: none; margin: 0; padding: 0; }
 .treatment.miradry .treatment-label { color: var(--color-gold-300); }
 .treatment.miradry .stat-note { color: rgba(255, 255, 255, 0.7); }
 
-.treatment.botox { background: var(--color-white); }
+.treatment.botox {
+  background-image:
+    linear-gradient(rgba(13, 38, 45, 0.82), rgba(13, 38, 45, 0.82)),
+    url("https://tresure-clinic.com/wp-content/uploads/2026/07/UnderarmBotoxinjections.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.treatment.botox .section-title { color: var(--color-white); }
+.treatment.botox .section-desc { color: rgba(255, 255, 255, 0.82); }
+.treatment.botox .treatment-label { color: var(--color-gold-300); }
 
 .treatment-grid {
   display: grid;
