@@ -515,9 +515,10 @@ ul { list-style: none; margin: 0; padding: 0; }
 .treatment.miradry {
   background-image:
     linear-gradient(rgba(13, 38, 45, 0.82), rgba(13, 38, 45, 0.82)),
-    url("https://tresure-clinic.com/wp-content/uploads/2026/07/miraDry_use.jpg");
+    url("https://tresure-clinic.com/wp-content/uploads/2026/07/miraDry_use-1.jpg");
   background-size: cover;
   background-position: center;
+  margin-bottom: 1px;
 }
 
 .treatment.miradry .section-title { color: var(--color-white); }
